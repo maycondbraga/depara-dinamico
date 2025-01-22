@@ -28,7 +28,8 @@ public class DeparaController {
                 new DePara("nome_cliente", "nome", String::toUpperCase),
                 new DePara("salario_cliente", "salario", Formatter::formatarMonetario),
                 new DePara("telefone_cliente", "telefone.ddd-telefone.numero", Formatter::formatarTelefone),
-                new DePara("endereco_cliente", "endereco.rua", String::toUpperCase)
+                new DePara("endereco_cliente", "endereco.rua", String::toUpperCase),
+                new DePara("endereco_cliente", "endereco.cidade", String::toLowerCase)
         );
 
         Cliente cliente = new Cliente().mock();
